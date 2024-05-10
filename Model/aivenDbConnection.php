@@ -1,6 +1,6 @@
 <?php
 
-$uri = "mysql://avnadmin:AVNS_5Ych6k-xoWyh12cOlnI@mysql-2eb27325-insourceit-0c39.h.aivencloud.com:17610/defaultdb?ssl-mode=REQUIRED";
+$uri = "mysql://avnadmin:AVNS_EV3aXOU6zdIjvm7rXcq@mysql-2410ad7e-st-bfd3.l.aivencloud.com:26540/defaultdb?ssl-mode=REQUIRED";
 
 $fields = parse_url($uri);
 
@@ -26,12 +26,15 @@ try {
 
         }
     }*/
-    if ($row->rowCount() > 0) {
-        while ($r = $row->fetchObject()) {
+    if($row->rowCount()>0){
+        while ($r = $row->fetchObject()){
             echo $r->date;
             echo $r->description;
+
         }
     }
+   
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
+?>

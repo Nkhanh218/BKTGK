@@ -15,7 +15,7 @@ mysqli_select_db($con, "defaultdb");
 
 session_start(); //To start the session
 
-$query = mysqli_query($con, "select * from QUANLYSACH");
+$query = mysqli_query($con, "select * from QuanLySach");
 
 //$row = mysqli_fetch_array($query);
 
