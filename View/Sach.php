@@ -35,15 +35,12 @@ try {
             border-collapse: collapse;
         }
 
-        table, th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
+        table tr th{
+  background:#337ab7;
+  color:white;
+  text-align:left;
+  vertical-align:center;
+}
     </style>
 </head>
 <body>
