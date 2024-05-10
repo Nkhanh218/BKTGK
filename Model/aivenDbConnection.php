@@ -26,14 +26,12 @@ try {
 
         }
     }*/
-    if($row->rowCount()>0){
-        while ($r = $row->fetchObject()){
+    if ($row->rowCount() > 0) {
+        while ($r = $row->fetchObject()) {
             echo $r->date;
             echo $r->description;
-
         }
     }
-   
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
